@@ -30,10 +30,10 @@ def main ():
         post_data.append(generate_post(x))
 
     with open("index.html", "w") as home_page:
-        home_page.write("<h1>Blog</h1><br>")
+        home_page.write("<h1>Blog</h1></br>")
         home_page.write("<ul>")
         for post in post_data:
-            home_page.write("<li><a href=\"generated_posts/" + post[0] + "\">" + post[1] + "</a</li>")
+            home_page.write("<li><a href=\"generated_posts/" + post[0] + "\">" + post[1] + "</a></li>")
         home_page.write("</ul>")
 
 main()
