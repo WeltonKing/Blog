@@ -20,4 +20,4 @@ jobs:
 
       - name: execute py script # run file
         run: |
-          python generate.py
+          python generator.py
